@@ -11,7 +11,8 @@ export const MainRoutes = () => {
   return (
     <div>
         <Routes>
-            <Route path='/scenario' element={<Scenario/>}  />
+        {/* <Route path='/' element={<Scenario/>}  /> */}
+            <Route path='/' element={<Scenario/>}  />
             <Route path='/scenario/create' element={<ScenarioForm/>}  />
             <Route path='/scenario/:id' element={<ScenarioEdit/>}  />
             <Route path='/vehicle/create' element={<Vehicle/>}  />

@@ -13,8 +13,5 @@
          6 VehicleEdit file <br/>
          </ol>
 <br/>
-<br/>
-<br/>
 6 using hooks- useState, useEffect <br/>
-<br/>
 7 using fetch method data get update edit and delete data  <br/>

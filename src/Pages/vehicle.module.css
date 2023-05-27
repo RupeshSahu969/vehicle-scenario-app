@@ -1,0 +1,34 @@
+.container{
+    /* border:1px solid black;
+    width: 50%;
+    height: 500px;
+    margin: auto; */
+}
+table,
+td,
+th {
+  border: 1px solid #1c1a1a;
+  text-align: left;
+  
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color: teal;
+  color: white;
+}
+
+
+
+
