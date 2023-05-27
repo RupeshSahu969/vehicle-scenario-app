@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react'
 const Vehicle = () => {
   const [vehicles, setVehicles] = useState([]);
   const [name,setName]=useState("")
-  const[positionx,setPositionx]=useState("")
-  const[positiony,setPositionY]=useState("")
+  const[position_x,setPositionx]=useState("")
+  const[position_y,setPositionY]=useState("")
   const[speed,setSpeed]=useState("")
   const[direction,setDirection]=useState("")
 const[count,setCount]=useState([])
@@ -14,8 +14,8 @@ const[count,setCount]=useState([])
 
     const payload={
         name,
-        positionx,
-        positiony,
+        position_x,
+        position_y,
         speed,
         direction
     }
@@ -65,6 +65,7 @@ useEffect(() => {
           <input type="text"
           value={name}
           onChange={(e)=>setName(e.target.value)}
+          required
           />
         </div>
         <div>
@@ -72,26 +73,29 @@ useEffect(() => {
           <input type="number" 
           value={speed}
           onChange={(e)=>setSpeed(e.target.value)}
+          required
           />
         </div>
         <div>
           <lable>Position X</lable>
           <input type="number"
-          value={positionx}
+          value={position_x}
           onChange={(e)=>setPositionx(e.target.value)}
+          required
           />
         </div>
         <div>
           <lable>Position Y</lable>
           <input type="number"
-          value={positiony}
+          value={position_y}
           onChange={(e)=>setPositionY(e.target.value)}
+          required
           />
         </div>
         <div>
           <lable>Direction</lable>
           <select  value={direction}
-          onChange={(e)=>setDirection(e.target.value)}>
+          onChange={(e)=>setDirection(e.target.value)} required>
             <option>Select Direction</option>
             <option value="Towards">Towards  </option>
             <option value="Backwards"> Backwards </option>

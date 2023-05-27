@@ -1,69 +1,24 @@
 {
   "scenario": [
     {
-      "id": 1,
       "name": "Test scenario",
-      "time": "10s"
+      "time": "60s",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "my scenario",
-      "time": "30s"
-    },
-    {
-      "name": "scenario",
-      "time": "20s",
-      "id": 3
+      "time": "70s",
+      "id": 2
     }
   ],
   "Vehicle": [
     {
-      "id": 1,
-      "name": "Bus",
-      "position x": 30,
-      "position y": 250,
-      "speed": 3,
-      "direction": "Towards"
-    },
-    {
       "name": "Train",
-      "positionx": "22",
-      "positiony": "12",
-      "speed": "300",
-      "direction": "Backwards",
-      "id": 2
-    },
-    {
-      "name": "",
-      "positionx": "",
-      "positiony": "",
-      "speed": "",
-      "direction": "",
-      "id": 3
-    },
-    {
-      "name": "",
-      "positionx": "",
-      "positiony": "",
-      "speed": "",
-      "direction": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "positionx": "",
-      "positiony": "",
-      "speed": "",
-      "direction": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "positionx": "",
-      "positiony": "",
-      "speed": "",
-      "direction": "",
-      "id": 6
+      "speed": "5",
+      "position_x": "32",
+      "position_y": "255",
+      "direction": "Towards",
+      "id": 1
     }
   ]
 }

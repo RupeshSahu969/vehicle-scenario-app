@@ -37,6 +37,7 @@ const handleSubmit=(e) =>{
             type="text"
             value={name}
             onChange={event => setName(event.target.value)}
+            required
           />
         </div>
         <div>
@@ -45,6 +46,7 @@ const handleSubmit=(e) =>{
             type="text"
             value={time}
             onChange={event => setTime(event.target.value)}
+            required
           />
         </div>
         <button type="submit">Add </button>
