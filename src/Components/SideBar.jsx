@@ -9,16 +9,16 @@ const SideBar = () => {
       <nav>
 		<ul>
 			<li>
-				<Link to="/vehicle"><i className="fa fa-home"></i>Home</Link>
+				<Link to="/vehicle">Home</Link>
 			</li>
 			<li>
-				<Link to="/scenario/create"><i className="fa fa-book"></i>Add Scenario</Link>
+				<Link to="/scenario/create">Add Scenario</Link>
 			</li>
 			<li>
-				<Link to="/"><i className="fa fa-users"></i>All Scenarios</Link>
+				<Link to="/">All Scenarios</Link>
 			</li>
 			<li>
-				<Link to="/vehicle/create"><i className="fa fa-picture-o"></i> Add Vehicle</Link>
+				<Link to="/vehicle/create"> Add Vehicle</Link>
 			</li>
 			
 		</ul>

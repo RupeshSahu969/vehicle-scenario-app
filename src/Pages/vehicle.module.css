@@ -17,12 +17,7 @@ input{
 }
 .form_container {
   display: flex;
-  gap: 20px;
-  /* width: 70%;
-  height: 100px;
-  margin-left: 270px; */
- 
-  
+  gap: 20px;  
 }
 .form_container > div{
   margin-left: 50px;

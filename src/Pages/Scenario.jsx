@@ -4,6 +4,7 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 import { MdEdit } from "react-icons/md"
 import { Link, useNavigate } from 'react-router-dom'
 import styles from "./scenario.module.css";
+
 const Scenario = () => {
 
   const [getdata, setGetdata] = useState([])
@@ -43,9 +44,7 @@ const Scenario = () => {
   const handleAddScenario = () => {
     navigate("/scenario/create")
   }
-  const handleDelete = (index,e) => {
-    setGetdata(getdata.filter((v, i) => i !== index));
-}
+
 
   return (
     <div>
@@ -90,9 +89,7 @@ const Scenario = () => {
                         </div>
                       </td>
                       <td>
-
                         <MdEdit onClick={() => LoadEdit(item.id)} />
-
                       </td>
                       <td>
                         <Link
@@ -109,7 +106,6 @@ const Scenario = () => {
                   ))}
               </tbody>
             </table>
-
           </div>
         </div>
       </div>

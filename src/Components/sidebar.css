@@ -20,7 +20,7 @@ nav ul {
 nav ul li {
 	list-style: none;
 }
-nav ul li a {
+nav ul li {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;

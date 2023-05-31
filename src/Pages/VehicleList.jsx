@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { MdEdit } from "react-icons/md"
 import styles from "./vehicle.module.css";
+
 const VehicleList = () => {
   const [vehicles, setVehicles] = useState([]);
   const navigate = useNavigate();
@@ -18,9 +19,7 @@ const VehicleList = () => {
     console.log(id)
   };
 
-
   const RemoveData = (id) => {
-
     fetch("http://localhost:8080/Vehicle/" + id, {
       method: "DELETE",
     })
@@ -34,20 +33,17 @@ const VehicleList = () => {
 
   };
 
-
   return (
     <div>
       <div className={styles.form_container}>
-      <div className={styles.scenarios}>
-            <lable>Scenario </lable><br/>
-              <select>
-                {vehicles.map((item) => (
-                  <option key={item.id}> {item.name} </option>
-                ))}
-
-              </select>
-            
-          </div>
+        <div className={styles.scenarios}>
+          <lable>Scenario </lable><br />
+          <select>
+            {vehicles.map((item) => (
+              <option key={item.id}> {item.name} </option>
+            ))}
+          </select>
+        </div>
       </div>
       <div className="container">
         <div>
@@ -79,20 +75,16 @@ const VehicleList = () => {
                       <td> {item.speed} </td>
                       <td> {item.direction} </td>
                       <td>
-
                         <MdEdit onClick={() => LoadEdit(item.id)} />
-
                       </td>
                       <td>
                         <Link
                           onClick={() => {
                             RemoveData(item.id)
                           }}
-                          
                         >
                           <RiDeleteBin6Line />
                         </Link>
-
                       </td>
                     </tr>
                   ))}
