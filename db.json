@@ -1,49 +1,44 @@
 {
   "scenario": [
     {
-      "name": "Test scenariosss",
-      "time": "988s",
+      "name": "Test Scenario",
+      "time": "2s",
       "id": 1
     },
     {
-      "name": "my scenario",
-      "time": "70s",
+      "name": "My scenario",
+      "time": "10s",
       "id": 2
     }
   ],
   "Vehicle": [
     {
-      "name": "Car",
-      "speed": "367",
-      "position_x": "34",
-      "position_y": "87633",
-      "direction": "Towards",
-      "id": 3
-    },
-    {
-      "name": "Bike",
-      "position_x": "23",
-      "position_y": "83",
-      "speed": "1",
+      "name": "Bus",
+      "position_x": "206",
+      "position_y": "30",
+      "speed": "3",
       "direction": "Towards",
       "count": [
         {
-          "name": "Test scenario",
-          "time": "90s",
+          "name": "Test Scenario",
+          "time": "2s",
           "id": 1
         },
         {
-          "name": "my scenario",
-          "time": "70s",
+          "name": "My scenario",
+          "time": "10s",
           "id": 2
-        },
-        {
-          "name": "New scenario",
-          "time": "30s",
-          "id": 3
         }
       ],
-      "id": 4
+      "id": 1
+    },
+    {
+      "name": "Car",
+      "speed": "5",
+      "position_x": "500",
+      "position_y": "500",
+      "direction": "Upwards",
+      "id": 2
     }
   ]
 }

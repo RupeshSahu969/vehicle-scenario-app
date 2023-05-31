@@ -61,10 +61,8 @@ const Scenario = () => {
               <button type="submit" className={styles.btn33} onClick={RemoveData}>Delete All </button>
             </div>
           </div>
-
           <div>
             <table>
-
               <thead>
                 <tr>
                   <td>Scenario ID</td>

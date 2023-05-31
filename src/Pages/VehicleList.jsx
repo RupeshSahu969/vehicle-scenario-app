@@ -19,20 +19,22 @@ const VehicleList = () => {
   };
 
 
-  const Removefunction = (id) => {
-  
-      fetch("http://localhost:8080/Vehicle/" + id, {
-        method: "DELETE",
+  const RemoveData = (id) => {
+
+    fetch("http://localhost:8080/Vehicle/" + id, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        alert("Removed successfully.");
+        window.location.reload();
       })
-        .then((res) => {
-          alert("Removed successfully.");
-          window.location.reload();
-        })
-        .catch((err) => {
-          console.log(err.message);
-        });
-    
+      .catch((err) => {
+        console.log(err.message);
+      });
+
   };
+
+
   return (
     <div>
       <div className={styles.form_container}>
@@ -84,7 +86,7 @@ const VehicleList = () => {
                       <td>
                         <Link
                           onClick={() => {
-                            Removefunction(item.id)
+                            RemoveData(item.id)
                           }}
                           
                         >
