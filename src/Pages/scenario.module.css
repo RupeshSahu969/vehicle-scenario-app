@@ -28,3 +28,52 @@ tr > th {
   background-color: teal;
   color: white;
 }
+
+select,
+input{
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  margin: 10px;
+}
+.form_container {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+  height: 100px;
+  margin-left: 270px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  text-align: start;
+  
+}
+.form_container > div{
+  margin-left: 50px;
+}
+.btn{
+  margin-right: 45%;
+  padding: 5px;
+  
+}
+.btn1{
+  background-color: #5aa02c;
+  color: white;
+  margin-left: 10px;
+padding: 5px;
+width: 80px;
+height: 30px;
+}
+.btn2{
+  background-color: #ffc370;
+  width: 80px;
+  height: 30px;
+  color: white;
+margin: 10px;
+ 
+}
+.btn3{
+  background-color: #4f9bf3;
+  color: white;
+  width: 80px;
+  height: 30px;
+ 
+}

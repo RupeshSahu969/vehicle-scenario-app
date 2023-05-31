@@ -5,6 +5,7 @@ import { MdEdit } from "react-icons/md"
 import { Link, useNavigate } from 'react-router-dom'
 import styles from "./scenario.module.css";
 const Scenario = () => {
+  
   const [getdata, setGetdata] = useState([])
   const navigate = useNavigate();
   useEffect(() => {
@@ -69,7 +70,7 @@ const Scenario = () => {
                       <td>{item.time}</td>
                       <td>
                         <div>
-                          <Link to="vehicle">
+                          <Link to="vehicle/create">
                             +
                           </Link>
                         </div>

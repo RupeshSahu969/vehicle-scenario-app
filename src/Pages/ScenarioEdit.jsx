@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-
+import styles from "./scenario.module.css";
 const ScenarioEdit = () => {
 const {id}=useParams()
-
 console.log(id)
 const [name,setName]=useState("")
 const[time,setTime]=useState("")
 const navigate = useNavigate();
+
+
 
 useEffect(() => {
     fetch(`http://localhost:8080/scenario/${id}`)
@@ -35,75 +36,47 @@ useEffect(() => {
     })
       .then((res) => {
         alert("Saved successfully.");
-        navigate("/scenario");
+        navigate("/");
       })
       .catch((err) => {
         console.log(err.message);
       });
   };
 
-
-
-
+const handleReset=()=>{
+  setName("")
+  setTime("")
+}
   return (
     <div>
-    <div className="row">
-      <div className="offset-lg-3 col-lg-6">
-        <form className="container" onSubmit={handlesubmit}>
-          <div className="card" style={{ textAlign: "left" }}>
-            <div className="card-title">
-              <h2>Scenario Edit</h2>
-            </div>
-            <div className="card-body">
-              <div className="row">
-               
-
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <label>Name</label>
-                    <input
-                      required
-                      value={name}
-                      onMouseDown={(e) => (true)}
-                      onChange={(e) => setName(e.target.value)}
-                      className="form-control"
-                    ></input>
-                    
-                      <span className="text-danger">Enter the name</span>
-                    
-                  </div>
-                </div>
-
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <label>Time</label>
-                    <input
-                      value={time}
-                      onChange={(e) => setTime(e.target.value)}
-                      className="form-control"
-                    ></input>
-                  </div>
-                </div>
-
-               
-                <div className="col-lg-12">
-                  <div className="form-group">
-                    <button className="btn btn-success" type="submit">
-                      Save
-                    </button>
-                    <button>
-                    <Link to="/" className="btn btn-danger">
-                      Back
-                    </Link>
-                    </button>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+    <div>
+      <h2>Create Scenario</h2>
+      <form onSubmit={handlesubmit}>
+      <div className={styles.form_container}>       
+         <div>
+           <lable>Scenario Name</lable><br/>
+             <input type="text"
+               value={name}
+               onChange={(e) => setName(e.target.value)}
+               required
+             />
+           
+         </div>
+         <div>
+           <lable>Scenario Time (Second)</lable> <br/>
+             <input type="text"
+               value={time}
+               onChange={(e) => setTime(e.target.value)}
+               required
+             />
+           
+         </div>
+       </div>
+       <div className={styles.btn}>
+       <button type="submit" className={styles.btn1}>Edit </button>
+       
+       </div>
+      </form>
     </div>
   </div>
   )

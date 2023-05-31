@@ -1,34 +1,72 @@
-.container{
-    /* border:1px solid black;
-    width: 50%;
-    height: 500px;
-    margin: auto; */
+
+h2{
+  margin-right: 50%;
 }
-table,
-td,
-th {
-  border: 1px solid #1c1a1a;
-  text-align: left;
+
+select,
+input{
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  margin: 10px;
+}
+.form_container {
+  display: flex;
+  gap: 20px;
+  /* width: 70%;
+  height: 100px;
+  margin-left: 270px; */
+ 
   
 }
-
-table {
-  border-collapse: collapse;
+.form_container > div{
+  margin-left: 50px;
+}
+.container_data{
   width: 70%;
+  height: 200px;
+  margin-left: 270px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  text-align: start;
+}
+.scenarios{
+
+  width: 40%;
   margin: auto;
-  margin-top: 50px;
+  padding: 10px;
 }
-
-th,
-td {
-  padding: 15px;
+.btn{
+  margin-right: 45%;
+  padding: 5px;
+  
 }
-
-tr > th {
-  background-color: teal;
+.btn1{
+  background-color: #5aa02c;
   color: white;
+  margin-left: 10px;
+padding: 5px;
+width: 80px;
+height: 30px;
 }
-
+.btn2{
+  background-color: #ffc370;
+  width: 80px;
+  height: 30px;
+  color: white;
+margin: 10px;
+ 
+}
+.btn3{
+  background-color: #4f9bf3;
+  color: white;
+  width: 80px;
+  height: 30px;
+ 
+}
+tbody{
+  background-color: white;
+  color: black;
+}
 
 
 
