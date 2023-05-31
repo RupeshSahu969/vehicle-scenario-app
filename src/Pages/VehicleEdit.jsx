@@ -60,7 +60,7 @@ fetch(`http://localhost:8080/Vehicle/${id}`,{
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container_edit}>
       <h2>Edit Vehicle</h2>
       <form onSubmit={handleEdit}>
         <div className={styles.form_container}>

@@ -77,3 +77,32 @@ margin: 10px;
   height: 30px;
  
 }
+.btn_top{
+  display: flex;
+  gap: 10px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: -70px;
+}
+.btn_top > div{
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.btn11{
+  background-color: #4f9bf3;
+  color: white;
+  margin-left: 10px;
+padding: 10px;
+}
+.btn22{
+  background-color: #5aa02c;
+  color: white;
+margin: 10px;
+padding: 10px;
+}
+.btn33{
+  background-color: #d3a057;
+  color: white;
+  padding: 10px;
+}

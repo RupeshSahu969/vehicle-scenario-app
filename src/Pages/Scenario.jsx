@@ -5,7 +5,7 @@ import { MdEdit } from "react-icons/md"
 import { Link, useNavigate } from 'react-router-dom'
 import styles from "./scenario.module.css";
 const Scenario = () => {
-  
+
   const [getdata, setGetdata] = useState([])
   const navigate = useNavigate();
   useEffect(() => {
@@ -36,17 +36,33 @@ const Scenario = () => {
       });
 
   };
+  const handleAddVehicle = () => {
+    navigate("/vehicle/create")
+  }
 
+  const handleAddScenario = () => {
+    navigate("/scenario/create")
+  }
+  const handleDelete = (index,e) => {
+    setGetdata(getdata.filter((v, i) => i !== index));
+}
 
   return (
     <div>
       <div className={styles.container}>
         <div>
-          <div>
-            <h2>All Scenario</h2>
+          <div className={styles.btn_top}>
+            <div>
+              <h2>All Scenario</h2>
+            </div>
+            <div>
+              <button type="submit" className={styles.btn11} onClick={handleAddScenario}>New Scenario</button>
+              <button type="submit" className={styles.btn22} onClick={handleAddVehicle}>Add Vehicle </button>
+              <button type="submit" className={styles.btn33} onClick={RemoveData}>Delete All </button>
+            </div>
           </div>
-          <div>
 
+          <div>
             <table>
 
               <thead>

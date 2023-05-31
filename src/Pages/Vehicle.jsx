@@ -41,6 +41,7 @@ const Vehicle = () => {
     setDirection("")
     setSpeed("")
     setDirection("")
+    
   }
   useEffect(() => {
     axios.get("http://localhost:8080/scenario")

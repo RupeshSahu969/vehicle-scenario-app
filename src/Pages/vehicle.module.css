@@ -1,4 +1,9 @@
-
+.container_edit{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: start;
+}
 h2{
   margin-right: 50%;
 }
